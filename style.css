@@ -14,7 +14,7 @@ footer{
 }
 .maindiv {
     background-color: white;
-    width: 300px;
+    width: 400px;
     padding: 20px;
     border-radius: 25px;
     margin: 0 auto;
@@ -22,10 +22,10 @@ footer{
 .formelement {
     color: black;
     padding: 10px;
-    margin-bottom: 10px;
 }
 .formelement label {
-    padding-right: 5px;
+    display: inline-block;
+    width:25%;
 }
 .formaction {
     padding:10px;
