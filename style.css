@@ -37,3 +37,9 @@ footer{
     /*background-color: #198754;
     color: white;*/
 }
+#result {
+    color: black;
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
