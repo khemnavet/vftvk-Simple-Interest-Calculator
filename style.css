@@ -1,4 +1,39 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+    background-color:black;
+    font-family:arial;
+    color:white;
+    padding:20px;
+}
+h1{
+    color:grey;
+    font-family:verdana
+}
+footer{
+    padding-top:20px;
+    color: black;
+}
+.maindiv {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+.formelement {
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.formelement label {
+    padding-right: 5px;
+}
+.formaction {
+    padding:10px;
+}
+.formaction button {
+    width: 100%;
+    text-align: center;
+    padding:5px;
+    /*background-color: #198754;
+    color: white;*/
+}
