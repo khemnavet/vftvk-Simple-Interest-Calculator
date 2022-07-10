@@ -21,7 +21,9 @@ function isPositiveNumber (value) {
     return true;
 }
 
-
+function isInRange(value, minValue, maxValue) {
+    return (value >= minValue) && (value <= maxValue);
+}
 
 function isValidInput() {
     //principal input, ensure value entered is positive number
@@ -32,8 +34,13 @@ function isValidInput() {
         return false;
     }
 
-    
-
+    //validate rate
+    const rateElement = document.getElementById('rate');
+    if (!isPositiveNumber(rateElement.value || !isInRange(rateElement.value, rateElement.minValue, rateElement.maxValue))) {
+        rateElement.focus();
+        alert('The rate selected is invalid');
+        return false;
+    }
 
     return true;
 }
