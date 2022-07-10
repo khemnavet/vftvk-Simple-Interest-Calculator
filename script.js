@@ -42,14 +42,21 @@ function isValidInput() {
         return false;
     }
 
+    //validate years
+    const yearsElement = document.getElementById('years');
+    if (!isPositiveNumber(yearsElement.value)) {
+        yearsElement.focus();
+        alert('The years selected is invalid');
+        return false;
+    }
+
     return true;
 }
 
 function compute()
 {
     if (isValidInput()) {
-        p = document.getElementById("principal").value;
-
+        
     }
 }
         
