@@ -3,7 +3,6 @@ window.onload = function() {
 
     //rate slider input, on change value do the following
     // - update the rate value displayed to the rate selected
-    // - recompute the interest
     const rateElement = document.getElementById('rate');
     rateElement.addEventListener('change', (event) => {
         const rateDisplay = document.getElementById('rate_val');
