@@ -11,19 +11,29 @@ window.onload = function() {
     });
 }
 
+function isPositiveNumber (value) {
+    if (isNaN(parseFloat(value))) {
+        return false;
+    }
+    if (parseFloat(value) <= 0) {
+        return false;
+    }
+    return true;
+}
+
+
+
 function isValidInput() {
     //principal input, ensure value entered is positive number
     const principalElement = document.getElementById('principal');
-    if (isNaN(parseFloat(principalElement.value))) {
+    if (!isPositiveNumber(principalElement.value)) {
         principalElement.focus();
         alert('Enter a positive number');
         return false;
     }
-    else if (parseFloat(principalElement.value) <= 0) {
-        principalElement.focus();
-        alert('Enter a positive number');
-        return false;
-    }
+
+    
+
 
     return true;
 }
@@ -32,6 +42,7 @@ function compute()
 {
     if (isValidInput()) {
         p = document.getElementById("principal").value;
+
     }
 }
         
