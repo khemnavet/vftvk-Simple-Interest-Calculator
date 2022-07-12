@@ -7,7 +7,12 @@ window.onload = function() {
     rateElement.addEventListener('change', (event) => {
         const rateDisplay = document.getElementById('rate_val');
         rateDisplay.textContent = `${event.target.value}%`;
+        //recompute interese
+        compute();
     });
+
+    document.getElementById('principal').addEventListener('change', compute);
+    document.getElementById('years').addEventListener('change', compute);
 }
 
 function isPositiveNumber (value) {
